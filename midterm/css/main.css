@@ -1,0 +1,145 @@
+* {
+
+    box-sizing: content-box;
+
+}
+
+body {
+
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    
+}
+
+.wrapper {
+
+    background-color: #d4e9e7;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+main {
+
+    margin: 0 20px 0 15px;
+
+}
+
+.container {
+
+    position: relative;
+
+}
+
+h1 {
+
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+
+
+}
+
+
+#lone-starfish {
+
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    
+}
+
+
+
+li>a:hover {
+
+    transition: 0.5s all ease;
+    color:darkgray;
+    
+}
+
+.nav-menu ul {
+
+    padding: 0;
+    text-align: center;
+
+}
+
+
+.nav-menu li {
+
+    border-right: 2px solid rgb(29, 29, 29);
+    display: inline-block;
+    width: 30%;
+    
+
+}
+
+.nav-menu a {
+
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+
+}
+
+li:last-child {
+
+    border-right: none;
+
+ }
+
+.contact {
+
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 1.8;
+    font-weight: bold;
+
+}
+
+#fname, #femail, #comment {
+
+    display: block;
+    width: 98%;
+    resize: vertical;
+         
+}
+
+.submitbutton {
+
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #d4e9e7;
+    margin: 10px;
+
+}
+
+.submitbutton:hover {
+
+    background: #aad4cf;
+    transition: 0.5s all ease;
+
+}
+
+
+footer {
+
+    padding: 20px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+
+
+
+
+
