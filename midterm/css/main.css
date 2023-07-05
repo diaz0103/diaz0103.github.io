@@ -4,6 +4,8 @@
 
 }
 
+/* Sets general background color, fonts and line height*/
+
 body {
 
     background-color: #aad4cf;
@@ -11,6 +13,8 @@ body {
     line-height: 1.4;
     
 }
+
+/* Sets brighter color for the main section and width */
 
 .wrapper {
 
@@ -20,11 +24,15 @@ body {
 
 }
 
+/* Sets a general margin for the main content */
+
 main {
 
     margin: 0 20px 0 15px;
 
 }
+
+/* Sets the h1 text overlay, position and styles */
 
 .container {
 
@@ -45,6 +53,7 @@ h1 {
 
 }
 
+/* Resizes image and margins */
 
 #lone-starfish {
 
@@ -55,14 +64,7 @@ h1 {
     
 }
 
-
-
-li>a:hover {
-
-    transition: 0.5s all ease;
-    color:darkgray;
-    
-}
+/* Creates horizontal menu, separators and hover actions. Eliminates decorations for every button.  */
 
 .nav-menu ul {
 
@@ -71,14 +73,12 @@ li>a:hover {
 
 }
 
-
 .nav-menu li {
 
     border-right: 2px solid rgb(29, 29, 29);
     display: inline-block;
     width: 30%;
     
-
 }
 
 .nav-menu a {
@@ -95,6 +95,15 @@ li:last-child {
 
  }
 
+ li>a:hover {
+
+    transition: 0.5s all ease;
+    color:darkgray;
+    
+}
+
+/* Creates border for the form and styles elements inside */
+
 .contact {
 
     border: 2px solid rgb(30, 30, 30);
@@ -105,6 +114,8 @@ li:last-child {
 
 }
 
+/* Organizes labels and text inputs one on top of each other and allows the textarea to resize vertically only */
+
 #fname, #femail, #comment {
 
     display: block;
@@ -112,6 +123,8 @@ li:last-child {
     resize: vertical;
          
 }
+
+/* Styles send button and hover action */
 
 .submitbutton {
 
@@ -129,6 +142,7 @@ li:last-child {
 
 }
 
+/* Styles the copyright mark */
 
 footer {
 
