@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Final Project</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Final Project</title>
 
 </head>
 
@@ -16,6 +22,7 @@
 
     <header>
         <div class="wrapper">
+
             <img src="img/logo.png" alt="">
 
             <nav>
@@ -28,12 +35,13 @@
                 </ul>
             </nav>
 
-            <div class="search">
+            <form class="search">
+
                 <input id="search-bar" type="search" placeholder="Search">
-                <button type="submit">
-                <span class="material-symbols-outlined">search</span>
+                <button type="submit" class="material-symbols-outlined">
                 </button>
-            </div>
+
+            </form>
         
         </div>
         
@@ -43,10 +51,8 @@
 
     <div id="hero-section" class="bg-black">
 
-        <div class="wrapper">
-
-            <img src="img/main-banner.jpg" alt="">
-                
+        <div class="wrapper transparency">
+                            
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vitae quis itaque soluta pariatur earum nihil, dolores quisquam aperiam natus cumque accusantium nam assumenda aliquid fuga quo, fugit repudiandae aut.</p>
 
@@ -60,17 +66,18 @@
 
     <main>
 
-        <!-- Two column layout for about us and image -->
+        <!-- Two column layout for about us and image on the left -->
 
         <section id="about-us">
 
             <div class="wrapper about-grid">
 
                 <img src="img/about-us.jpg" alt="">
-
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam sequi asperiores. Quam, perspiciatis? Saepe tempora incidunt pariatur reiciendis quae repellendus aliquid, repudiandae nulla fugiat nesciunt beatae facilis minima quisquam?</p>
-                <p>Eos nisi voluptatibus repudiandae explicabo, ratione at rem dolor fugit, corrupti temporibus aspernatur amet optio aut.</p>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam sequi asperiores. Quam, perspiciatis? Saepe tempora incidunt pariatur reiciendis quae repellendus aliquid, repudiandae nulla fugiat nesciunt beatae facilis minima quisquam?</p>
+                    <p>Eos nisi voluptatibus repudiandae explicabo, ratione at rem dolor fugit, corrupti temporibus aspernatur amet optio aut.</p>
+                </div>
 
             </div>
 
@@ -174,12 +181,12 @@
 
                 <article>
 
-                <img src="img/john.jpg" alt="">
+                    <img src="img/john.jpg" alt="">
 
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur quos quibusdam eum quis autem ea dignissimos odit? Natus impedit quas illo laborum qui rerum, eaque magnam vel ad cum!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur quos quibusdam eum quis autem ea dignissimos odit? Natus impedit quas illo laborum qui rerum, eaque magnam vel ad cum!</p>
                 
                 </article>
 
@@ -201,82 +208,90 @@
         
         <!-- Two column layout for Contact Us, contains a form with title and submit button and a google map with title on the right -->
 
+        <!-- ARREGLAR ESTE COMENTARIO Small section for the Hours of operation, contains a table with two columns and three rows -->
+
         <section id="contact" class="padding-tb">
 
             <div class="wrapper">
 
                 <h2>Contact Us</h2>
 
-                <h3>Send us a message</h3>
+                <div class="contact-grid">
 
-                <form action="index.html" method="get">
+                    <div class="message">
+                        
+                        <h3>Send us a message</h3>
 
-                    <div>
-                        <label for="fname">Full Name</label>
-                        <input id="fname" name="fname" type="text">
+                        <form action="index.html" method="get">
+
+                            <div>
+                                <label for="fname">Full Name</label>
+                                <input id="fname" name="fname" type="text">
+
+                            </div>
+
+                            <div>
+                                <label for="femail">Email</label>
+                                <input id="femail" name="femail" type="text">
+
+                            </div>
+
+                            <div>
+                                <label for="comment">Message</label>
+                                <textarea name="comment" id="comment" ></textarea>
+
+                            </div>
+
+                            <div>
+                                <button class="sendbutton" type="submit">Send</button>
+
+                            </div>
+
+                        </form>
 
                     </div>
 
-                    <div>
-                        <label for="femail">Email</label>
-                        <input id="femail" name="femail" type="text">
+                    <div class="location">
+
+                        <h3>Location</h3>
+
+                        <!-- This is the Google map -->
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89812.94718833259!2d-75.82744588891947!3d45.29520095195842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690381363928!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
 
-                    <div>
-                        <label for="comment">Message</label>
-                        <textarea name="comment" id="comment" ></textarea>
+                    <div class="operation">
 
+                        <h3>Hours of operation</h3>
+                        
+                        <table>
+        
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+        
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+        
+                        </table>
+        
                     </div>
 
-                    <div>
-                        <button class="sendbutton" type="submit">Send</button>
-
-                    </div>
-
-                </form>
-
-                <h3>Location</h3>
-
-                <!-- This is the Google map -->
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89812.94718833259!2d-75.82744588891947!3d45.29520095195842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690381363928!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
             </div>
 
         </section>
-
-        <!-- Small section for the Hours of operation, contains a table with two columns and three rows -->
-
-        <section id="operation" class="padding-tb">
-
-            <div class="wrapper">
-
-                <h3>Hours of operation</h3>
-                
-                <table>
-
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9AM - 6PM</td>
-                    </tr>
-
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-        </section>
-
+        
     </main>
 
     <!-- Footer includes coypright info in two small lines -->

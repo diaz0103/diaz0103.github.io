@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* Sets the font size for each of the titles */
+
+h1 {
+    font-size: 4.768rem;
+    font-weight: 700;
+}
+  
+h2 {
+    font-size: 2.441rem;
+    font-weight: 700;
+}
+  
+h3 {
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* transparency {
+    background-color: black;
+    opacity: 10%;
+} */
+
+
+
+
+
