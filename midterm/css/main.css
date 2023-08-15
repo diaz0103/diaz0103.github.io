@@ -126,7 +126,7 @@ li:last-child {
 
 /* Styles send button and hover action */
 
-.submitbutton {
+.sendbutton {
 
     padding: 5px 15px;
     border-radius: 5px;
@@ -135,7 +135,7 @@ li:last-child {
 
 }
 
-.submitbutton:hover {
+.sendbutton:hover {
 
     background: #aad4cf;
     transition: 0.5s all ease;

@@ -10,8 +10,9 @@ body {
 }
 
 .wrapper {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 img {
@@ -38,6 +39,14 @@ h3 {
 h4 {
     font-size: 1rem;
     font-weight: 700;
+    border-bottom: 2px solid #c7b807;
+    margin-bottom: 0.5rem;
+}
+
+article {
+    display: grid;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* header .wrapper {
@@ -51,6 +60,306 @@ h4 {
     background-color: black;
     opacity: 10%;
 } */
+
+.transparency {
+    background-color: rgba(0,0,0,.6);
+    padding: 10% 2%;
+    
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+header {
+    background-color: #222;
+    padding: 1rem;
+}
+
+.bg-logo {
+    background-color: #c78b07;
+}
+
+.logo {
+    display: flex;
+    align-items: start;
+    width: 10em;
+}
+
+/*background-star { revisar esto para bg del menu
+    background-color: black;
+} */
+
+#search-bar { /*revisar esto para la barra de búsqueda */
+    width: calc(100% - 3.5rem);
+    height: 2.1rem;
+}
+
+#search-bar ~ button { /* revisar con comentario de wendy para centrar la lupa */
+    width: 2rem;
+    margin-left: -3px;
+    vertical-align: middle;
+    background-color: black;
+    color: #c78b07;
+    border: 2px solid #c78b07;
+
+}
+
+
+
+.nav-list a{
+    color: #c78b07;
+    text-decoration: none;
+    width: 100%;
+    
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 400;
+    display: inline-block;
+    
+}
+
+.nav-list a:hover {
+    color: black;
+    background-color: #c78b07;
+
+}
+
+nav ul {
+    text-decoration: none;
+}
+
+
+
+#hero-section {
+    background-image: url("../img/main-banner.jpg");
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left;
+    color: #fff;
+
+}
+
+#hero-section a:link,
+#hero-section a:visited {
+    padding: .8em 1em;
+    background-color: #c78b07;
+    color:black;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#about-us {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.about-text { 
+    display: flex;
+    flex-direction: column;
+}
+
+.padding-tb {
+    padding: 1rem 0;
+}
+
+/* OUR SERVICES SECTION */
+
+#our-services {
+    padding: 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+        
+}
+
+.services-grid article {
+    background-color: #ffe6ac;
+}
+
+.services-grid a:link,
+.services-grid a:visited {
+    
+    padding: .8em 1em;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0 auto;
+}
+
+.digital-info {
+    padding: 1rem;
+}
+
+#our-vision {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    background-image: url("../img/vision.jpg");
+    background-size: cover;
+    padding: 1rem;
+    color: white;    
+}
+
+#our-vision a:link,
+#our-vision a:visited {
+    
+    padding: .8em 1em;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0 auto;
+}
+
+/* OUR TEAM SECTION */
+
+#our-team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#our-team article {
+    background-color: #ffe6ac;
+    display: flex;
+    flex-direction: column;        
+}
+
+.team-info {
+    padding: 1rem;
+}
+
+/* OUR TEAM SECTION */
+
+/* Creates border for the form and styles elements inside */
+
+#contact {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+/* Form */
+
+.text-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.text-input label {
+    margin-bottom: 0.25rem;
+}
+  
+.text-input input {
+    padding: 0.5rem;
+}
+  
+.text-input textarea {
+    
+    width: 100%;
+    resize: none;
+}
+
+
+/* Styles send button and hover action */
+
+.sendbutton {
+
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    background: #222;
+    color: #c78b07;
+        
+}
+
+.sendbutton:hover {
+
+    background: #aad4cf;
+    transition: 0.5s all ease;
+
+}
+
+/* Map - Location */
+
+.location-map{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.location-map iframe{ 
+    width: 100%;
+    height: 500px;
+    display: block; 
+}
+
+/* Table - Hours of operation */
+
+table {
+    
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  th {
+    background-color: #ffe6ac
+  }
+  
+  /* Table design */
+  
+  tr, td, th {
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    
+  }
+
+  /* Footer */
+
+  footer {
+    background-color: #222;
+    padding: 1rem;
+    color: #c78b07
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+  
+  footer a { /*revisar esto para el link de unsplash */
+    text-decoration: underline;
+  }
+  
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
