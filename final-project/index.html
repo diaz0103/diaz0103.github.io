@@ -23,31 +23,40 @@
     <!-- The header contains logo, a navigation menu and a search bar with a button -->
 
     <header>
-        <div class="wrapper">
+        
+        <section id="nav-menu" class="wrapper">
             
-            <div class="bg-logo">
+            <div class="menu">
+                
+                <div class="bg-logo">
 
-                <img class="logo" src="img/logo.png" alt="">
+                    <img class="logo" src="img/logo.png" alt="">
 
-            </div>
-                <nav>
-                    <ul class="nav-list">
+                </div>
+                    <nav>
+                        <ul>
+                            
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            
+                        </ul>
+                    </nav>
 
-            <form class="search">
+                <form id="search-input" action="#" method="get">
 
-                <input id="search-bar" type="search" placeholder="Search">
-                <button type="submit" class="material-symbols-outlined">search</button>
+                    <input type="text" placeholder="Search"/>
+                    <button type="submit">
+                        <span id="search-btn" class="material-symbols-outlined">search</span>
+                    </button>
 
-            </form>
+                </form>
+            
+            </div>
         
-        </div>
+        </section>
         
     </header>
     
@@ -77,7 +86,12 @@
 
             <div class="wrapper about-grid">
 
-                <img src="img/about-us.jpg" alt="">
+                <div class="about-image">
+
+                    <img src="img/about-us.jpg" alt="">
+                    
+                </div>
+
                 <div class="about-text">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam sequi asperiores. Quam, perspiciatis? Saepe tempora incidunt pariatur reiciendis quae repellendus aliquid, repudiandae nulla fugiat nesciunt beatae facilis minima quisquam?</p>
@@ -123,7 +137,7 @@
                             <h3>Marketing</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus aliquam, id quos explicabo ipsam fugit ab. Recusandae, eaque animi quas iste, voluptatem rem vitae dicta adipisci cum, excepturi amet.</p>
 
-                            <a class="button-marketing" href="#">Connect with us <span class="material-icons">play_arrow</span></a>
+                            <a class="button-marketing" href="#">Marketing Plans <span class="material-icons">play_arrow</span></a>
 
                         </div>
 
@@ -139,7 +153,7 @@
                             <h3>Video Production</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus aliquam, id quos explicabo ipsam fugit ab. Recusandae, eaque animi quas iste, voluptatem rem vitae dicta adipisci cum, excepturi amet.</p>
 
-                            <a class="button-video" href="#">Connect with us <span class="material-icons">play_arrow</span></a>
+                            <a class="button-video" href="#">Video Plans <span class="material-icons">play_arrow</span></a>
 
                         </div>
 
@@ -156,7 +170,7 @@
                             <h3>Web Development</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus aliquam, id quos explicabo ipsam fugit ab. Recusandae, eaque animi quas iste, voluptatem rem vitae dicta adipisci cum, excepturi amet.</p>
 
-                            <a class="button-web" href="#">Connect with us <span class="material-icons">play_arrow</span></a>
+                            <a class="button-web" href="#">Web Plans <span class="material-icons">play_arrow</span></a>
 
                         </div>
                         
@@ -172,7 +186,7 @@
                             <h3>Print</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus aliquam, id quos explicabo ipsam fugit ab. Recusandae, eaque animi quas iste, voluptatem rem vitae dicta adipisci cum, excepturi amet.</p>
 
-                            <a class="button-print" href="#">Connect with us <span class="material-icons">play_arrow</span></a>
+                            <a class="button-print" href="#">Print Plans <span class="material-icons">play_arrow</span></a>
 
                         </div>
 
@@ -211,11 +225,11 @@
                 
                 <h2>Our Team</h2>
 
-                <article>
+                <article class="team">
 
-                    <img src="img/john.jpg" alt="">
+                    <img class="block" src="img/john.jpg" alt="">
 
-                    <div class="team-info">
+                    <div class="team-info block">
                         
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
@@ -224,13 +238,13 @@
 
                     </div>
                 
-                </article>
+                
+                
+                
 
-                <article>
-
-                    <img src="img/bob.jpg" alt="">
+                    <img class="block" src="img/bob.jpg" alt="">
                     
-                    <div class="team-info">
+                    <div class="team-info block">
 
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
